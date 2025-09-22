@@ -17,13 +17,108 @@
         </ul>
     </nav>
     <div class="grid-container">
-        <div class="grid-item item1">
-            
-        </div>
-        <div class="grid-item item2">Item 2</div>
-        <div class="grid-item item3">Item 3</div>
-        <div class="grid-item item4">Item 4</div>
-        <div class="grid-item item5">Item 5</div>
+        <div class="grid-item item1" id="car">
+            <img src="Porsche_car.png" alt="Photo for item 1">
+          </div>
+
+        <div class="grid-item item2" id="wheel">
+  <div class="Wheel">
+    <img src="PWheel.png" alt="Wheel">
+  </div>
+</div>
+
+<div class="grid-item item3" id="wheel2">
+    <div class="Wheel2">
+      <img src="PWheel.png" alt="Wheel2">
     </div>
+  </div>
+
+  <div class="grid-item item4" id="Sus">
+    <div class="Sus2">
+      <img src="Suspesion.png" alt="Sus">
+    </div>
+  </div>
+
+  <div class="grid-item item5" id="Sus2">
+    <div class="Sus2">
+      <img src="Suspesion.png" alt="Sus2">
+    </div>
+  </div>
+
+  <div class="grid-item item6" id="Engine">
+    <div class="Engine">
+      <img src="Engine.png" alt="Engine">
+    </div>
+  </div>
+
+  <div class="grid-item item7" id="Door">
+    <div class="Door">
+        <img src="PDoor.png" alt="Door">
+    </div>
+</div>
+
+<div class="grid-item item8" id="Muffler">
+    <div class="Muffler">
+      <img src="Muffler.png" alt="Muffler">
+    </div>
+  </div>
+
+  <div class="grid-item item9" id="DriveShaft">
+    <div class="DriveShaft">
+      <img src="driveshaft.png" alt="DriveShaft">
+    </div>
+  </div>
+
+  <div class="grid-item item10" id="Spring">
+    <div class="Springt">
+      <img src="Springs.png" alt="Spring">
+    </div>
+  </div>
+
+  <div class="grid-item item11" id="Spring2">
+    <div class="Spring2">
+      <img src="Springs2.png" alt="Spring2">
+    </div>
+  </div>
+
+
+
+<script>
+    const car = document.getElementById("car");
+    const wheel = document.getElementById("wheel");
+    const wheel2 = document.getElementById("wheel2");
+    const Sus = document.getElementById("Sus");
+    const Sus2 = document.getElementById("Sus2");
+    const Engine = document.getElementById("Engine");
+    const Door = document.getElementById("Door");
+    const Muffler = document.getElementById("Muffler");
+    const DriveShaft = document.getElementById("DriveShaft");
+    const Spring = document.getElementById("Spring");
+    const Spring2 = document.getElementById("Spring2");
+    const grid = document.querySelector(".grid-container");
+  
+  
+    const toggleMovement = () => {
+      wheel.classList.toggle("move");
+      wheel2.classList.toggle("move"); 
+      Sus.classList.toggle("move"); 
+      Sus2.classList.toggle("move"); 
+      Engine.classList.toggle("move"); 
+      Door.classList.toggle("move"); 
+      Muffler.classList.toggle("move"); 
+      DriveShaft.classList.toggle("move");
+      Spring.classList.toggle("move");
+      Spring2.classList.toggle("move");
+      grid.classList.toggle("revealed");
+    };
+
+    car.addEventListener("click", toggleMovement);
+    Door.addEventListener("click", toggleMovement);
+  </script>
+
+
+    
+  
+    
 </body>
 </html>

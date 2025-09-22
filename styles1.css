@@ -1,23 +1,111 @@
 body{
-background-color: lightblue;
-text-align: center;
-margin-top: 40vh;
+    background-color: lightblue;
+    text-align: center;
+    margin-top: 40vh;
+    background-image: url('Garage1.png');
+    background-size: cover;
+    z-index: 1;
+    
+    }
 
-}
+    h1{
+        color: rgb(255, 255, 255);
+        font-size: 80px;
+        margin-bottom: 40px;
+    }
+    
+    button{
+        background-color: rgb(76, 76, 205);
+        color: white;
+        padding: 50px 100px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 60px;
+        margin-top: -190vh;
+    
+    }       
+    
+    button:hover{
+        background-color: rgb(64, 64, 109);
+    }   
 
-button{
-    background-color: rgb(76, 76, 205);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}       
+   
+    
+    
+      .item1 {
+    background: rgba(255, 0, 0);
+    z-index: 3; /* order of images */
+    width: 70vh;
+    height: 90vh;
+    margin-left: 38vh;
+    margin-top: -43.2vh;
+    background: transparent;
 
-button:hover{
-    background-color: rgb(64, 64, 109);
-}                                               
+      }
+    
+      .item1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* makes sure the photo fills the box */
+       
+      }
+
+      .item1 .Garagedoor {
+        width: 100%;
+        height: 100%;
+        transform-origin: left center;        
+        transition: transform 0.5s ease;      
+      }
+    
+      .item1 .Garagedoor img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+      }
+    
+      .item1:hover .Garagedoor {
+        transform: rotateY(-80deg);           
+      }
+
+      .item2 {
+        background: rgba(255, 0, 0);
+        z-index: 3; /* order of images */
+        width: 70vh;
+        height: 90vh;
+        margin-left: 85.7vh;
+        margin-top: -89.9vh;
+        background: transparent;
+          }
+        
+          .item2 img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* makes sure the photo fills the box */
+           transform: scaleX(-1);
+          }
+
+          .item2 .Garagedoor2 {
+            width: 100%;
+            height: 100%;
+            transform-origin: right center;        
+            transition: transform 0.5s ease;      
+          }
+        
+          .item2 .Garagedoor2 img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+          }
+        
+          .item2:hover .Garagedoor2 {
+            transform: rotateY(80deg);           
+          }
+    
+    
 
 
 
+    
